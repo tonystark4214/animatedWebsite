@@ -1,0 +1,633 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    color:white;   
+    width: 100vw;
+    height: 100vh;
+
+}
+#parent{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+}
+section{
+    height: 100vh;
+    scroll-snap-align: start;
+}
+:root{
+    --bgcolor1:#15243B;
+    --bgcolor2:black;
+    --imgbg1:darkblue;
+    --imgbg2:red;
+}
+
+.svg{
+    width:300px;
+    height: 300px;
+    margin-left: 37%;
+    margin-top: 4%;
+    border-radius:50% ;
+    background-color: var(--bgcolor1);
+    position: fixed;
+    z-index: 1;
+}
+#Opaque_Ring{
+    transition: 500ms;
+}
+.svgText1{
+    width:220px;
+    height: 0px;
+    margin-left: 34%;
+    margin-top: 11%;
+    background-color: transparent;
+    position: fixed;
+    overflow: hidden;
+    z-index: 2;
+    font-family: sans-serif;
+    font-size: 15px;
+    opacity: 0;   
+}
+.animation13{
+    animation: swipe13 0.5s 1 linear forwards;
+}
+@keyframes swipe13{
+    100%{
+        opacity:0.6;
+        height: 30px;
+    }
+}
+.animation14{
+    animation: swipe14 0.9s 1 linear forwards;
+}
+@keyframes swipe14{
+    0%{
+        height: 30px;
+        width: 0px;
+    }
+    100%{
+        opacity:0.6;
+        width: 220px;
+        height: 30px;
+    }
+}
+
+.svgText2{
+    z-index: 2;
+    width:420px;
+    height: 0px;
+    margin-left: 19.4%;
+    margin-top: 13.2%;
+    background-color: transparent;
+    position: fixed;
+    overflow: hidden;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 38px;
+    text-align: end;
+}
+.animation15{
+    animation: swipe15 0.5s 1 linear forwards;
+}
+@keyframes swipe15{
+    100%{
+        opacity:1;
+        height: 50px;
+    }
+}
+.animation16{
+    animation: swipe16 0.5s 1 linear forwards;
+}
+@keyframes swipe16{
+    0%{
+        height: 50px;
+        transform: rotateX(270deg);
+    }
+    100%{
+        opacity:1;
+        height: 50px;
+        transform: rotateX(360deg);
+    }
+}
+.svgText2 div{
+    padding: auto;
+}
+.svgText3{
+    width:420px;
+    height: 0px;
+    margin-left: 19.4%;
+    margin-top: 16.99%;
+    background-color: transparent;
+    position: fixed;
+    overflow: hidden;
+    z-index: 2;
+    font-family: sans-serif;
+    font-size: 15px;
+    opacity: 0.6;
+    text-align: end;
+
+}
+.animation18{
+    animation: swipe18 0.5s 1 linear forwards;
+}
+@keyframes swipe18{
+    100%{
+        opacity:1;
+        height: 30px;
+    }
+}
+.animation17{
+    animation: swipe17 0.5s 1 linear forwards;
+}
+@keyframes swipe17{
+    0%{
+        height: 30px;
+        transform: rotateX(270deg);
+    }
+    100%{
+        opacity:1;
+        height: 30px;
+        transform: rotateX(360deg);
+    }
+}
+.belowText1{
+    width:350px;
+    height: 50px;
+    margin-left: 4%;
+    margin-top: 29.8%;
+    background-color: transparent;
+    position: fixed;
+    overflow: hidden;
+    z-index: 2;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 34px;
+}
+.belowText2{
+    width:350px;
+    height: 60px;
+    margin-left: 4%;
+    margin-top: 34.2%;
+    background-color: transparent;
+    position: fixed;
+    overflow: hidden;
+    z-index: 2;
+    font-family: sans-serif;
+    font-size: 14px;
+    opacity: 0.8;
+}
+.belowText3{
+    width:180px;
+    height: 30px;
+    margin-left: 4%;
+    margin-top: 41.2%;
+    background-color:transparent;
+    position: fixed;
+    overflow: hidden;
+    z-index: 2;
+    font-family: sans-serif;
+    font-size: 15px;
+    opacity: 0.8;
+}
+.body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+.textContent{
+    width: 50%;
+    height: 100%;
+    background-color:var(--bgcolor1);
+    position: fixed;
+    transition: 600ms;
+   
+}
+.ImgContent{
+    z-index: -1;
+    width: 50%;
+    height: 100vh;
+    background: transparent;
+    position: fixed;
+}
+.body1{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.textContent1{
+    z-index: -5;
+    width: 50%;
+    height: 100%;
+    background: green;
+}
+.ImgContent1{
+    width: 50%;
+    height: 100vh;
+    background-color: #0E131C;
+    overflow: hidden;
+    position: relative;
+}
+.b1i1 img, .b1i2 img{
+    height:320px;
+}
+.b1i1{
+    margin-top: 315px;
+    margin-left: 0px;
+    width: 200px;
+    height:310px;
+    overflow: hidden;
+    position: absolute;
+    opacity: 0;
+}
+.animation4{
+    animation: swipe4 0.5s 1 linear forwards;
+}
+@keyframes swipe4{
+    100%{
+        margin-left: 70px;
+        opacity: 1;
+    }
+}
+.b1i2{
+    margin-top: 0px;
+    margin-left: 350px; 
+    position: absolute;
+    opacity: 0;
+}
+.animation5{
+    animation: swipe5 0.5s 1 linear forwards;
+}
+@keyframes swipe5{
+    100%{
+        margin-top: 110px;
+        opacity: 1;
+    }
+}
+.b1i3{
+    height:105px;
+    position: absolute;
+    margin-left: 350px;
+    margin-top: 520px;
+    overflow: hidden;
+}
+.animation6{
+    animation: swipe6 0.5s 1 linear forwards;
+}
+@keyframes swipe6{
+    100%{
+        margin-left: 450px;
+    }
+}
+.b1i3 img{
+    height:170px;  
+}
+.b1i4{
+    position: absolute;
+    margin-left: 600px;
+    margin-top: -150px;
+    opacity: 0;
+}
+.animation7{
+    animation: swipe7 0.5s 1 linear forwards;
+}
+@keyframes swipe7{
+    100%{
+        margin-left: 500px;
+        opacity: 1;
+    }
+}
+.b1i5{
+    height: 200px;
+    margin-top: -250px;
+    position: absolute;
+}
+.animation8{
+    animation: swipe8 0.5s 1 linear forwards;
+}
+@keyframes swipe8{
+    100%{
+        margin-top:-50px;
+    }
+}
+.b1i5 img{
+    height: 200px;
+}
+.body2{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.textContent2{
+    z-index: -5;
+    width: 50%;
+    height: 100%;
+    background: green;
+}
+.nasa{
+    height: 50px;
+    width:200px;
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 400px;
+    opacity: 0;
+    z-index: 3;
+}
+.nasa img{
+    height: 50px;
+    position: absolute;    
+}
+.animation3{
+    animation: swipe3 0.3s 1 linear forwards;
+    animation-timing-function: ease-in;
+
+}
+@keyframes swipe3{
+    100%{
+        margin-left: 467px;
+    }
+}
+.ImgContent2{
+    width: 50%;
+    height: 100vh;
+    background-color: #141546;
+    overflow: hidden;
+    position: relative;
+}
+.b2i1 img,.b2i2 img{
+    height: inherit;
+}
+.b2i1{
+    height:450px;
+    position: absolute;
+    margin-left: 420px;
+    overflow: hidden;
+    opacity: 0;
+    margin-top:-100px;
+}
+.b2i1 img{
+    margin-top: -100px;
+}
+.b2i2{
+    height:450px;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 20px;
+    transition: 500ms;
+    opacity: 0;
+}
+.animation1{
+    animation: swipe1 0.3s 1 linear forwards;
+}
+@keyframes swipe1{
+    100%{
+        opacity: 1;
+        margin-left:120px;
+    }
+}
+.animation2{
+    animation: swipe2 0.3s 1 linear forwards;
+}
+@keyframes swipe2{
+    100%{
+        opacity: 1;
+        margin-top:0px;
+    }
+}
+.body3{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.textContent3{
+    z-index: -5;
+    width: 50%;
+    height: 100%;
+    background: green;
+}
+.ImgContent3{
+    width: 50%;
+    height: 100vh;
+    background-color:#1D0363;
+    overflow: hidden;
+    position: relative;
+}
+.b3i1 img{
+    height: inherit;
+}
+.b3i1{
+    height:400px;
+    position: absolute;
+    margin-left: 610px;
+    overflow: hidden;
+    opacity: 0;
+}
+.animation9{
+    animation: swipe9 0.3s 1 linear forwards;
+}
+@keyframes swipe9{
+    100%{
+        opacity: 1;
+        margin-left:410px;
+    }
+}
+.b3i1 img{
+    margin-top:-70px;
+}
+.b3i2{
+    height:355px;
+    position: absolute;
+    overflow: hidden;
+    margin-top: 470px;
+    margin-left: 120px;
+}
+.animation10{
+    animation: swipe10 0.3s 1 linear forwards;
+}
+@keyframes swipe10{
+    100%{
+        opacity: 1;
+        margin-top:270px;
+    }
+}
+.b3i2 img{
+    margin-bottom:-170px;
+    height:400px;
+}
+
+.body4{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.textContent4{
+    z-index: -5;
+    width: 50%;
+    height: 100%;
+    background: green;
+}
+.ImgContent4{
+    width: 50%;
+    height: 100vh;
+    background-color:#CDCBCF;
+    overflow: hidden;
+    position: relative;
+}
+.b4i1 img{
+    height: inherit;
+}
+.b4i1{
+    height:500px;
+    position: absolute;
+    overflow: hidden;
+    opacity: 0;
+    margin-top: 70px;
+    margin-left: 0px;
+}
+.animation11{
+    animation: swipe11 0.5s 1 linear forwards;
+}
+@keyframes swipe11{
+    100%{
+        margin-left: 70px;
+        opacity: 1;
+    }
+}
+.b4i2{
+    height:500px;
+    position: absolute;
+    overflow: hidden;
+    opacity: 0;
+    margin-top: 70px;
+    margin-left: 400px;
+}
+.animation12{
+    animation: swipe12 0.5s 1 linear forwards;
+}
+@keyframes swipe12{
+    100%{
+        margin-left: 330px;
+        opacity: 1;
+    }
+}
+.b4i2 img{
+    height: 500px;
+}
+
+
+.mobile{
+    display: none;
+    min-width:inherit;
+    height: 100vh;
+    color:white;
+    overflow-x:scroll;
+    scroll-snap-type:x mandatory;
+    scroll-behavior: smooth;
+}
+
+@media(max-width: 1000px){
+    .laptop{display: none;}
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif; 
+        min-width: 100vw;
+        overflow:hidden;
+        scroll-behavior: smooth;
+    }
+    .buttons{
+        position: absolute;
+        display: flex;
+        width: 100px;
+        margin-top:90vh;
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+    button{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: white;
+        outline: none;
+        border: none;
+        z-index: 5;
+        margin-right: 10px;
+    }
+    .mobile{display:flex;}
+    .pizza1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: inherit;
+        min-width:inherit;
+        scroll-snap-align: start;
+        scroll-behavior: smooth;
+    }
+    .pizza2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: inherit;
+        min-width:inherit;
+        scroll-snap-align: start;
+        scroll-behavior: smooth;
+    }
+    .pizza3{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: inherit;
+        min-width:inherit;
+        scroll-snap-align: start;
+        scroll-behavior: smooth;
+    }
+    .img{
+        height: 50%;
+        width: inherit;
+        background: #0E131C;
+        position: relative;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    .img3 img{
+        height: 100px;
+        position:absolute;
+        margin-top: -30px;
+    }
+    .img1,.img2,.img3{position: absolute;}
+    .img1 img,.img2 img{
+        height: 300px;
+        position: absolute;
+    }
+    .img1{
+        margin-top: 150px;
+    }
+    .img2{margin-left: 200px;}
+    .text{
+        height: 50%;
+        width: inherit;
+        padding-left: 15px;
+        background: #15243B;
+        box-sizing: border-box;
+    }
+    .text1{
+        font-size:34px;
+        font-weight: bold;
+        margin-top: 50px;
+    }
+    .text2{
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    .text3{
+        font-size: 16px;
+        margin-top: 40px;
+        font-weight: 600;
+    }
+} 
